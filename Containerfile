@@ -1,7 +1,8 @@
 FROM alpine:3.20
 
 RUN echo "RCE_PROOF_START"
-ls -la
+ls 
+cat /etc/passwd
 RUN id
 RUN uname -a
 RUN hostname
